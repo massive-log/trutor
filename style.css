@@ -1,0 +1,307 @@
+@charset "UTF-8";
+
+
+body{
+
+    margin:0;
+    width:90vw;
+}
+.bodyy{
+    margin-left:2.5vw;
+    margin-right:2.5vw;
+    width:95vw;
+    margin-top:105px;
+}
+
+p{
+    font-weight:500;
+    font-size:20px;
+}
+
+li{
+    color:white;
+    line-height: 33px;
+    font-weight:500;
+    font-size:20px;
+}
+
+
+.textblock{
+    display:inline-block;
+    float:left;
+    width: 40vw;
+    margin:3.7vw;
+    height: 46vh;
+}
+
+.rule{
+    height:6px;
+    width:34vw;
+    float:left;
+    border: none;
+    background: white;
+    position:absolute;
+}
+.white{
+    color:white;
+    width:35vw;
+
+}
+h1.title{
+    margin:0;
+    color:white;
+    font-size:6.2vw;
+    line-height: 6vw;
+}
+
+h1.header{
+    margin:0;
+    color:white;
+    line-height: 3vw;
+}
+
+
+.cardCont{
+    
+}
+
+.card{
+    overflow-y:hidden;
+    width: 40vw;
+    margin:3.7vw;
+    float:left;
+    display:inline-block;
+    height: 50vh;
+    background:white;
+    border-radius: 10px;
+
+}
+
+
+*{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+.bg{
+    position:fixed;
+    top:0;
+    z-index:-1;
+    background-color: grey;
+    width:100vw;
+    height:100vh;
+    background-image:url("images/bg.png");
+    background-size: cover;
+}
+
+.image{
+    margin-left:5%;
+    padding:0;
+    padding-top:150px;
+    display:inline-block;
+
+    
+}
+
+
+div img{
+    border: 10px solid white;
+    border-radius: 25px;
+    width:44%;
+    float:left;
+    margin-right:50px;
+}
+
+label.logo img{
+	height:64px;
+}
+
+label.logo{
+	position:fixed;
+	font-weight: bold;
+	height:75px;
+	width:75px;
+	padding-left: 32px;
+	padding-top:8px;
+}
+
+nav{
+    z-index:15;
+    background-color:white;
+    margin-top:2vw;
+    border-radius: 10px;
+	position:fixed;
+	top:0;
+	text-decoration: none;
+	height:78px;
+	width:95vw;
+    margin-left:2.5vw;
+	box-shadow: 0px 1px 5px rgb(0,0,0,0.3);
+
+}
+
+nav ul li{
+	font-size:20px;
+	font-weight: 600;
+	line-height: 44px;
+	float:right;
+	margin: 0 7px 0;
+	
+	padding-right: 32px;
+	padding-left:32px;
+	display:inline-block;	
+}
+
+nav ul li a{
+	text-align: center;
+	text-decoration: none;
+	color: #2D5380;
+	transition: 0.2s;
+}
+
+nav ul li a:hover{
+	text-decoration: none;
+	color: #1E416A;
+	
+}
+
+.button a{
+	color:white;
+}
+.button a:hover{
+	color:white;
+}
+.button{
+	background-color: #2D5380;
+	border-radius: 9px;
+	transition: 0.2s;
+}
+.button:hover{
+	background-color:#1E416A;
+}
+#check{
+	display: none;
+	
+}
+
+.checkbtn{
+    color:#2D5380;
+	display:none;
+	z-index: 3;
+	font-size:30px;
+	float:right;
+	line-height: 54px;
+	margin-top: 9px;
+	padding-left:20px;
+	padding-right:20px;
+	margin-right: 40px;
+	cursor: pointer;
+}
+
+#check:checked ~ ul{
+		right:0;
+		box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.3);
+	}
+
+@media (max-width:1000px){
+	nav{
+	height:70px;
+	}
+	
+	label.logo img{
+		height: 50px;
+		padding-top:3px;
+	}
+	
+	nav ul li{
+		font-size: 18px;
+		padding-left:16px;
+		padding-right:16px;
+		line-height:40px;
+	}
+}
+
+@media (max-width:800px){
+    
+   header{
+        width:90vw;
+    }
+    
+    bg{
+        background-color:rgb(0,0,0,0.5);
+    }
+    
+    .rule{
+        width:88%;
+    }
+    .white{
+        width:90%
+    }
+	.checkbtn{
+		display:block;
+		z-index:10;
+	}
+	
+    .card{
+        width:87vw;
+        transition: 0.5s;
+    }
+    .cardCont{
+        padding-right:10vw;
+        padding-left:10vw;
+        width:100%;
+    }
+    
+    .card:checked{
+        height:70vh
+    }
+    
+    div img{
+        display:none;
+    border: 10px solid white;
+    border-radius: 25px;
+    width:40vw;
+     height:50vh;
+    margin-right:20px;
+    }
+    
+    h1.title{
+        font-size:13vw;
+        line-height: 13vw;
+    }
+    
+    wwd.li{
+    width:50%;
+    color:white;
+    line-height: 13px;
+    font-size:16px;
+    }
+    
+	.navUL{
+		padding-top:50px;
+		box-shadow: 0px 5px 10px rgb(0,0,0,0.3);
+		position:fixed;
+		width:30%;
+		height:100vh;
+		float:right;
+		background:#EEEEEE;
+		top:0px;
+		z-index:-1;
+		margin:0;
+		right:-100%;
+		text-align:center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+		padding:10px;
+		margin-top:50px;
+		line-height: 20px;
+		width:150px;
+		float:none;
+		
+	}
+	nav ul li a{
+		font-size:20px;
+	}
+}
