@@ -7,18 +7,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@400;600&display=swap')
 
     
-* {
-        
+* { 
+}
+
+#commercialImg{
+    background-image: url(images/loblaws1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 10%;
+}
+
+#homeImg{
+    background-image: url(images/bedroom1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 60%;
+}
+
+.homeText h2{
+    color:var(--main-bg)
+}
+
+.homeText{
+    width:50%;
+    margin-left:4rem;
+}
+
+.homeContainer{
+    display:flex;
+    margin:4rem;
+}
+
+.homeImage{
+    width:50%;
+    height:20rem;
+    background:var(--main-bg);
+}
+
+#services ul{
+    padding-bottom:2rem;
+    display:flex;
+    width:90%;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap
+}
+
+#services ul li{
+    margin:1rem;
+    list-style-type: none;
+    width:auto;
+    color:white;
 }
 
 #finalBlock{
+    padding-left:3rem;
     width:50%;
     display:flex;
     flex-wrap:wrap;
-    justify-content: center;
 }
   #finale{
-        width:100%;
+      margin:0 7rem;
+      width:100%;
       margin-top:64px;
       margin-bottom:64px;
       display:flex;
@@ -39,7 +89,7 @@
 }
 
 #finale p{
-    width:50%;
+    width:100%;
 }
 
  #finale img{
@@ -48,7 +98,7 @@
 
 .extraImage{
     width:100%;
-    height:75%;
+    height:100%;
     background-color:var(white);
     background-size:100% auto;
     background-position: center;
@@ -84,6 +134,34 @@
     color:white;
 }
 
+#contactNowContainer{
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:var(--main-bg);
+}
+
+#contactNowContainer div{
+    margin:2rem 10vw;
+    display:flex;
+    align-items: center;
+    gap:4rem;
+    width:auto;
+}
+
+#contactNowContainer div a{
+    color:white;
+    font-size: 1.5rem;
+}
+
+#contactNowContainer div h1{
+    font-size: 3rem;
+    color:white;
+}
+
+
 .pfp{
 
     margin:32 16 0 0;
@@ -110,6 +188,29 @@
     width:90%;
 }
 
+#galleryViewMoreButton{
+    width:100%;
+    background:var(--main-bg);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:1rem 3rem;
+    margin-top:-3rem;
+}
+
+#galleryButton{
+    cursor: pointer;
+    background:var(--secondary);
+    border:none;
+    color:white;
+    padding: 0.5rem 3rem;
+    border-radius: 1rem;
+    border: None;
+}
+
+#galleryButton:hover{
+    opacity: 0.8;
+}
 
 #extras{
     display:flex;
@@ -120,6 +221,9 @@
     background-color: var(--main-bg);
 }
 .slot{
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
     background-color: white;
     margin:0 15 0 15;
     width: 30%;
@@ -127,20 +231,29 @@
     transition:0.3s;
 }
 #slot1Image{
-    background-image: url(images/cleaning.jpg);
+    background-position: top;
+    background-image: url(images/bathroom1.jpg);
+    
 }
 #slot2Image{
-    background-image: url(images/cleanroom.jpg);
+    background-image: url(images/loblaws2.jpg);
 }
 #slot3Image{
-    background-image: url(images/cleaning.jpg);
+    background-position: center -80px;
+    background-image: url(images/room1.jpg);
 }
 .slot div:hover{
     transition:0.3s;
-    background-size: 110% auto;
+    background-size: 105% auto;
 }
 
+html{
+    max-width: 100vw;
+    overflow-x:hidden;
+}
 body{
+    max-width: 100vw;
+    overflow-x:hidden;
     padding:0;
     margin:0;
     box-sizing: border-box;
@@ -151,7 +264,9 @@ body{
 #beforeAfter{
     width: 50vw;
     height: 50vh;
-    background-color: grey;
+    background-image: url(images/loblaws1.jpg);
+    background-size: cover;
+    background-position: center -150px;
     margin: 42px 34px 42px 34px;
 }
 
@@ -161,13 +276,12 @@ body{
 }
 
 #CCS{
-    font-size: 8vmin;
-    line-height: 8vmin;
+    font-size: 5vw;
+    line-height: 6vw;
     color:var(--main-bg)
 }
 
 h2{
-    text-align: center;
     color:white;
     font-weight: 600;
 }
@@ -176,11 +290,34 @@ h2{
     width:50%;
     height: 225px;
 }
+#clients h2{
+    text-align: center;
+    font-size: 2rem;
+    margin:0;
+}
+#clientImages{
+    padding: 0 0 2rem 0;
+    display:flex;
+    justify-content: center;
+    align-content:center;
+}
 
 .client{
     width: 20vw;
 }
+
+#services h2{
+    text-align: center;
+    margin: 0;
+    margin-bottom:-0.4rem;
+    font-size:2rem;
+    width:100%;
+}
 #services{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: var(--main-bg);
     width:50%;
     height: 225px;
@@ -222,20 +359,26 @@ header a{
 header{
     padding: 0 20px;
     background-color:white;
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.39);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.15);
     height:65px;
     display:flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
+#brand a img{
+    max-width:110px;
+}
 #brand{
     font-weight:bold;
     font-size:18px;
     display:flex;
     align-items: center;
+    width:auto;
 }
 
 #footer{
+    padding: 16px 0 16px 0;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -254,7 +397,7 @@ header{
     margin-right:60vw;
 }
 
-ul{
+.navList{
     user-select: none;
     list-style: none;
     display:flex;
@@ -262,12 +405,13 @@ ul{
     justify-content: space-around;
 }
 
-ul li{
+.navList li{
     padding: 5px;
     margin-left:10px;
 }
 
-ul li a:hover {
+
+.navList li a:hover {
     color:var(--secondary);
 }
 
@@ -342,6 +486,11 @@ ul li a:hover {
     text-align: center;
     width:50%;
 }
+
+
+
+
+
 @media only screen and (max-width: 1105px){
     #content{
         justify-content: center;
@@ -353,6 +502,8 @@ ul li a:hover {
         flex-wrap: nowrap;
         width:100vw;
         height: 40vh;
+        background-position:center; 
+        background-size:cover;
     }
     .reviewBlock{
         height: 628px;
@@ -370,27 +521,92 @@ ul li a:hover {
     .reviewContent p{
         margin-top: -18px;}
     .extraImage{
-        background-size:auto 100%;
+        background-size:cover;
 }
+    .slot{
+        background-size: cover;
+    }
     .slot div:hover{
     transition:0.3s;
     background-size: auto 110%;
 }
     #finalBlock{
-        width:100%;
+        margin:0 8rem;
+        width:20rem;
         flex-wrap:wrap;
     }
     #finale{
+        display:flex;
+        align-items: center;
+        justify-content: center;
         flex-wrap: wrap;
         height:600px;
-        
+        width:100%;
+        margin: 0;
     }
+
     #sqImg{
         width:100%;
         height:50%;
     }
     
+    #CCS{
+    font-size: 10vw;
+        line-height: 12vw;
+    margin: 0;
+        margin-top:2.5rem;
+        margin-left:-1.5rem;
+    padding: 0;}
     
+    
+}
+@media only screen and (max-width: 1000px){
+    #contactNowContainer div{
+        flex-direction: column;
+        margin-bottom: 6rem
+    }
+    #contactNowContainer div a{
+        margin:0;
+    }
+    #contactNowContainer div h1{
+        margin:0;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .homeText{
+    width:100%;
+    margin-left:0;        
+}
+
+.homeContainer{
+    flex-direction: column;
+}
+
+.homeImage{
+    width:100%;
+}
+    
+    #services ul{
+    padding-bottom:2rem;
+    display:flex;
+    width:100%;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #services{
+        height:auto;
+    }
+    #clients{
+        height:auto;
+    }
+}
+@media only screen and (max-width: 770px){
+    #slot3image{
+        background-position:center;
+    }
 }
 @media only screen and (max-width: 600px){
     #footer h2{
@@ -399,6 +615,10 @@ ul li a:hover {
     .extraHeader h2{
     font-size:5vmin;
 }
+    
+    #finalBlock{
+        margin:0 2rem;
+    }
     .extraImage{
         background-size: 100% auto;
 }
@@ -413,7 +633,7 @@ ul li a:hover {
     
     .slot{
        
-        width:70%;
+        width:85%;
         height: 270px;
         flex-wrap: wrap;
     }
