@@ -54,10 +54,10 @@ input:focus{
 }
 
 #commercialImg{
-    background-image: url(images/loblaws1.jpg);
+    background-image: url(images/clothes.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center 10%;
+    background-position: center;
 }
 
 #homeImg{
