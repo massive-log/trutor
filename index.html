@@ -38,7 +38,7 @@
             </ul>
         </div>-->
     </header>
-    <div id="callNow"><a href="tel:647-972-4481">Call Now! 647-972-4481</a></div>
+    <div id="callNow"><a href="tel:123-456-7890">Call Now! 519-582-5333</a></div>
     
     
     <div id="content">
@@ -148,8 +148,25 @@ We know that, depending on your business and commercial premises, arranging spec
         <div id="contactNowContainer">
             <div>
                 <h1>Contact Us</h1>
-                <a href="tel:647-972-4481"><i class="fa-solid fa-phone" style="margin-right:1rem"></i>647-972-4481</a>
-                <a href="mailto:info@trutor.ca"><i class="fa-solid fa-envelope" style="margin-right:1rem"></i>info@trutor.ca</a>
+                <form action="https://formspree.io/f/xeqyzbdk" method="POST">
+                <input class="contactBase" type="text" name="FirstName" placeholder="First Name" required autocomplete="off">
+                <input class="contactBase" type="text" name="LastName" placeholder="Last Name" required autocomplete="off">
+                <input class="contactBase" type="email" name="email" placeholder="Email Address" required autocomplete="off">
+                <select class="contactBase" id="CleaningType" name="Cleaning Type" required>
+                    <option value="" disabled selected hidden>I am looking for...</option>
+                    <option value="House Cleaning">House Cleaning</option> 
+                    <option value="Condo Cleaning">Condo Cleaning</option> 
+                    <option value="PostConstruction Cleaning">Post-Construction Cleaning</option> 
+                    <option value="Commercial Cleaning">Commercial Cleaning</option> 
+                    <option value="AirBNB Cleaning">AirBNB Cleaning</option>
+                    <option value="MoveIn Cleaning">Move-in Cleaning</option> 
+                    <option value="MoveOut Cleaning">Move-out Cleaning</option> 
+                    <option value="Deep Cleaning">Deep Cleaning</option> 
+                </select>
+                <textarea class="contactBase" name="AdditionalInfo" placeholder="Additional information..."></textarea>
+                    <button type="submit"><strong>Submit</strong></button>
+                
+                </form>
             </div>
         </div>
         

@@ -10,6 +10,49 @@
 * { 
 }
 
+form{
+    width:100%;
+    display:grid;
+    grid-template-columns: auto auto;
+    width:100%;
+    grid-gap:1.5rem;
+}
+
+
+.contactBase{
+     font-family: Poppins;
+    outline:none;
+    transition: 0.1s;
+    box-sizing: border-box;
+    border: none;
+    margin:0;
+    padding:0.8rem;
+    border-radius: 4px;
+}
+/*
+input[type=email]{
+   grid-column: 1 / 3;
+}*/
+select{
+    color:gray;
+}
+textarea:focus{
+    outline: 2px solid var(--secondary);
+}
+textarea{
+    font-family: Poppins;
+   overflow: scroll;
+    height:10rem;
+   grid-column: 1 / 3;
+}
+input{
+    outline:none;
+    transition:0.3s;
+}
+input:focus{
+    outline: 2px solid var(--secondary);
+}
+
 #commercialImg{
     background-image: url(images/loblaws1.jpg);
     background-size: cover;
@@ -137,7 +180,6 @@
 #contactNowContainer{
     width:100%;
     height:auto;
-    display:flex;
     justify-content: center;
     align-items: center;
     background:var(--main-bg);
@@ -145,7 +187,6 @@
 
 #contactNowContainer div{
     margin:2rem 10vw;
-    display:flex;
     align-items: center;
     gap:4rem;
     width:auto;
@@ -198,13 +239,16 @@
     margin-top:-3rem;
 }
 
-#galleryButton{
+button{
+    font-size:1rem;
+    grid-column: 1/3;
+    height:3rem;
     cursor: pointer;
     background:var(--secondary);
     border:none;
     color:white;
     padding: 0.5rem 3rem;
-    border-radius: 1rem;
+    border-radius: 4rem;
     border: None;
 }
 
@@ -615,7 +659,18 @@ header{
     .extraHeader h2{
     font-size:5vmin;
 }
-    
+    form{
+        padding-top:2rem;
+        width:80%;
+        display:flex;
+        flex-direction: column;
+    }
+    #contactNowContainer{
+        width:100%;
+    }
+    #contactNowContainer div{
+        width:100%;
+    }
     #finalBlock{
         margin:0 2rem;
     }
