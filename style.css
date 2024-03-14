@@ -280,7 +280,8 @@ button{
     
 }
 #slot2Image{
-    background-image: url(images/loblaws2.jpg);
+    background-position: top;
+    background-image: url(images/nofrills.jpg);
 }
 #slot3Image{
     background-position: center -80px;
@@ -308,9 +309,9 @@ body{
 #beforeAfter{
     width: 50vw;
     height: 50vh;
-    background-image: url(images/loblaws1.jpg);
+    background-image: url(images/supermarket.jpg);
     background-size: cover;
-    background-position: center -150px;
+    background-position: center;
     margin: 42px 34px 42px 34px;
 }
 
@@ -572,7 +573,7 @@ header{
     }
     .slot div:hover{
     transition:0.3s;
-    background-size: auto 110%;
+    background-size: cover;
 }
     #finalBlock{
         margin:0 8rem;
@@ -675,11 +676,11 @@ header{
         margin:0 2rem;
     }
     .extraImage{
-        background-size: 100% auto;
+        background-size: cover;
 }
     .slot div:hover{
     transition:0.3s;
-    background-size: 110% auto;
+    background-size:cover;
 }
     #extras{
         height:1000px;
@@ -687,7 +688,7 @@ header{
     }
     
     .slot{
-       
+       background-size: cover;
         width:85%;
         height: 270px;
         flex-wrap: wrap;
@@ -733,7 +734,7 @@ header{
 }
 @media only screen and (max-width: 400px){
     .extraImage{
-        background-size: auto 100%;
+        background-size: cover;
 }
     .slot div:hover{
     transition:0.3s;
